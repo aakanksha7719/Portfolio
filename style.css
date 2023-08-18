@@ -625,3 +625,24 @@ header .navbar ul li a:hover{
     font-size: 1.4rem;
     color: #eee;
 }
+
+
+
+@media (max-width: 991px) {
+    header {
+        left: -120%; /* This hides the sidebar off-screen */
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menu {
+        display: block; /* Display the mobile menu icon */
+    }
+
+    header.toggle {
+        left: 0%; /* Show the sidebar when the toggle class is applied */
+    }
+
+    body {
+        padding: 0; /* Remove the padding on the body */
+    }
+}
