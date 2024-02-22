@@ -345,18 +345,18 @@ provides facility to user for collecting their waste easily.
   action="https://formspree.io/f/xyyrjgok"
   method="POST"
 >
-          <input type="text" placeholder="name" class="box" />
-          <input type="email" placeholder="email" class="box" />
-          <input type="text" placeholder="subject" class="box" />
+          <input type="text" placeholder="name" name="name"class="box" />
+          <input type="email" placeholder="email" name="email"class="box" />
+          <input type="text" placeholder="subject" name="subject" class="box" />
           <textarea
-            name=""
+            name="msg body"
             id=""
             cols="30"
             rows="10"
             class="box message"
             placeholder="message"
           ></textarea>
-          <button type="submit" class="btn">
+          <button type="submit" name="button" class="btn">
             send <i class="fas fa-paper-plane"></i>
           </button>
         </form>
